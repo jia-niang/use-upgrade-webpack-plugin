@@ -1,11 +1,8 @@
 {
   "name": "use-upgrade-webpack-plugin",
   "version": "0.0.1",
-  "description": "A tool to help you detect new versions of your websites.",
+  "description": "A tool for use with use-upgrade.",
   "main": "lib/index.js",
-  "module": "es/index.js",
-  "jsnext:main": "es/index.js",
-  "unpkg": "dist/antd.min.js",
   "typings": "lib/index.d.ts",
   "scripts": {
     "build": "tsc --outDir lib"
@@ -30,8 +27,6 @@
     "typescript": "^5.1.6"
   },
   "files": [
-    "dist/**",
-    "es/**",
     "lib/**"
   ]
 }

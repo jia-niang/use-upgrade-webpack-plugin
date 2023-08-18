@@ -30,9 +30,8 @@ export default class UseUpgradeWebpackPlugin {
     const includeSkipParam = argvs.includes('--' + manualSkipParam)
     const includeEnableParam = argvs.includes('--' + manualEnableParam)
 
-    if (options.defaultSkip && !includeEnableParam) {
-      return
-    } else if (includeSkipParam) {
+    const shouldSkip = (options.defaultSkip && !includeEnableParam) || includeSkipParam
+    if (shouldSkip) {
       return
     }
 
@@ -48,3 +47,5 @@ export default class UseUpgradeWebpackPlugin {
     })
   }
 }
+
+module.exports = UseUpgradeWebpackPlugin
