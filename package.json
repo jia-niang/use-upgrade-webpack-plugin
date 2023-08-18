@@ -1,0 +1,37 @@
+{
+  "name": "use-upgrade-webpack-plugin",
+  "version": "0.0.1",
+  "description": "A tool to help you detect new versions of your websites.",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "jsnext:main": "es/index.js",
+  "unpkg": "dist/antd.min.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc --outDir lib"
+  },
+  "keywords": [
+    "use-upgrade",
+    "upgrade",
+    "webpack",
+    "webpack plugin"
+  ],
+  "author": "jia-niang <1@paperplane.cc>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.5.0",
+    "@types/react": "^18.2.20",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/parser": "^6.4.0",
+    "eslint": "^8.47.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.2",
+    "typescript": "^5.1.6"
+  },
+  "files": [
+    "dist/**",
+    "es/**",
+    "lib/**"
+  ]
+}
